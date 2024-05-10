@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bilet Yönetim Sistemi</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="background-img">
+    <div class="ticket-section">
+        <form id="ticket-form">
+            <h2>BİLET AL</h2>
+             <input type="text" id="name" placeholder="Ad" required><br>
+             <input type="text" id="surname" placeholder="Soyad" required><br>
+             <input type="number" id="number" placeholder="Nömrə">
+             <input type="email" id="email" placeholder="Email" required><br>
+             <input type="text" id="seat" placeholder="Yer №" required><br>
+             <input type="date" id="date"  required>  -
+             <input type="date" id="date" required><br>
+             <input type="text" id="fromto" placeholder="Haradan" required> -
+             <input type="text" id="fromto" placeholder="Haraya" required><br>
+             <input type="submit" value="Bileti Al">
+        </form>
+        <button id="view-history-btn">Sifariş Tarixçəsi</button>
+    </div>
+</div>
+<div id="ticket-history" style="display: none;">
+    <h3>Sifariş Tarixçəsi</h3>
+    <table id="history-table">
+        <thead>
+            <tr>
+                <th>Bilet ID</th>
+                <th>Ad</th>
+                <th>Soyad</th>
+                <th>Nömrə</th>
+                <th>Email</th>
+                <th>Yer №</th>
+                <th>Tarix</th>
+                <th>Haradan</th>
+                <th>Haraya</th>
+                <th>Hərəkət</th>
+            </tr>
+        </thead>
+        <tbody id="history-table-body">
+        
+        </tbody>
+    </table>
+</div>
+
+ 
+
+</body>
+</html>
